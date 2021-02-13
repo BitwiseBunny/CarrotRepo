@@ -5,6 +5,7 @@
 
 :root {
     --leading: 2em;
+    --secondaryColor: #545ffd;
 }
 
 /* Everything within curly braces {} is called a "rule set". */
@@ -27,21 +28,77 @@ header {
     padding: 1em 0;
 }
 
-nav {
+.navbar {
     background-color: skyblue;
     margin: 0;
-    padding-bottom: 1em;
+    padding: .2em 1em;
 }
 
-nav a {
-    color: white;
+.logo {
     text-decoration: none;
     font-family: 'Parisienne', cursive;
-    font-size: 1.2rem;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.logo span {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--secondaryColor);
+    font-weight: bold;
+}
+
+nav {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    width: 50%;
+    right: 0;
+    top: 0;
+    background: rgba(135,206,235, .9);
+    height: 100vh;
+    padding: 1em;
+    text-align: right;
+}
+
+.container {
+    display: flex;
+    place-content: space-between;
+}
+
+nav.menu-btn {
+    display: block;
+}
+
+/* Adding images to a div makes them easier to edit. */
+.img-menu-cta {
+    width: 5%;
+    cursor: pointer;
+}
+
+.img-menu-exit {
+    float: right;
+    margin: .5em;
+    cursor: pointer;
+    width: 10%;
 }
 
 nav ul {
     list-style-type: none;
+    margin-top: 5em;
+    padding: 0;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    display: block; /* This is required for hyperlink elements, if you want to adding padding or margins! */
+    padding: 1em;
+    font-size: 1.3em;
+    text-align: right;
+}
+
+nav ul li a:hover{
+    font-weight: bold;
 }
 
 section {
@@ -156,7 +213,7 @@ p {
 /* overlay to fade in on click */
 .overlay {
     position: absolute;
-    height: 100vh;
+    height: 150vh;
     width: 100%;
     background: rgba(0,0,0,.9);
     z-index: 1;
