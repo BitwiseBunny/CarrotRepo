@@ -170,9 +170,9 @@ label {
 input[type=text] {
     border: 1px solid #707070;
     width: 100%;
-    padding: .5em 0;
+    padding: .4em 0;
     border-radius: 3em;
-    font-size: 1.3em;
+    font-size: 1.2em;
     text-align: center;
     outline: none;
 }
@@ -186,7 +186,7 @@ input[type=button] {
     letter-spacing: .11em;
     padding: .4em 0;
     border-radius: 3em;
-    font-size: 1.5em;
+    font-size: 1.2em;
     cursor: pointer;
     margin: 1em 0;
     outline: none;
@@ -208,21 +208,7 @@ input[type=button]:hover {
     padding: 2em;
 }
 
-h2 {
-    font-family: 'Parisienne', cursive;
-    position: relative;
-}
 
-h2::before {
-    content: '';
-    position: absolute;
-    width: 10.1em;
-    background-color: skyblue;
-    height: 0.02em;
-    bottom: 0.2em;
-    z-index: -1;
-    margin: -.3em;
-}
 
 img {
     width: 100%;
@@ -352,7 +338,7 @@ p {
     }
     label {
         margin: 0;
-        font-size: 1.7em;
+        font-size: 1.8em;
         margin-bottom: .5em;
     }
     input[type=text] {
@@ -425,9 +411,7 @@ p {
         object-fit: contain;
     }
 
-    h2 {
-        margin: 0;
-    }
+
 
 }
 

@@ -1,0 +1,22 @@
+
+h2 {
+    font-family: 'Parisienne', cursive;
+    position: relative;
+}
+
+h2::before {
+    content: '';
+    position: absolute;
+    width: 10.1em;
+    background-color: skyblue;
+    height: 0.02em;
+    bottom: 0.2em;
+    z-index: -1;
+    margin: -.3em;
+}
+
+@media (min-width: 930px) {
+    h2 {
+        margin: 0;
+    }
+}
