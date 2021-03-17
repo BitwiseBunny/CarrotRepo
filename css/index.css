@@ -22,14 +22,22 @@ section.gallery {
     padding: 0;
 }
 
+.galleryTitle {
+  text-align: center;
+  font-family: 'Parisienne', cursive;
+  font-size: 2em;
+  position: relative;
+  
+  
+}
+
 .row {
     display: -ms-flexbox; /* IE10 */
     display: flex;
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
-    padding: 0 4px;
+    padding: 2em 4px;
     margin: 0;
-    padding: 0;
     justify-content: center;
 
   }
