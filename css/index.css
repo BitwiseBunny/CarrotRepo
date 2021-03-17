@@ -48,17 +48,15 @@ section.gallery {
     vertical-align: middle;
     width: 100%;
     border-radius: .8em;
+    cursor: pointer;
+    filter: grayscale(100%);
+  }
+
+  .column img:hover {
+    filter: none;
   }
 
   /* CSS for modal ---------------------------------- */
-
-  #myImg {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  #myImg:hover {opacity: 0.7;}
   
   /* The Modal (background) */
   .modal {
