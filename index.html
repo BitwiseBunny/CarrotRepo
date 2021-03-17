@@ -69,17 +69,24 @@
             <!-- Photo Grid -->
             <div class="row"> 
                 <div class="column">
-                <img src="/images/SnowWhiteRedApple.jpg" style="width:100%">
-                <img src="images/ModernAlice.jpg" style="width:100%">
+                <img  id="myImg" src="/images/SnowWhiteRedApple.jpg" alt="Snow White" style="width:100%" onclick="myFunction(this)">
+                <img src="images/ModernAlice.jpg" alt="Alice Automata" style="width:100%" onclick="myFunction(this)">
                 </div>
                 <div class="column">
-                <img src="/images/SnowWhiteBite.jpg" style="width:100%">
-                <img src="/images/Witch2.jpg" style="width:100%">
+                <img src="/images/SnowWhiteBite.jpg" alt="Snow White" style="width:100%" onclick="myFunction(this)">
+                <img src="/images/Witch2.jpg" alt="Witch" style="width:100%" onclick="myFunction(this)">
                 </div>  
                 <div class="column">
-                <img src="/images/Withc.jpg" style="width:100%">
-                <img src="/images/VinylBunny.jpg" style="width:100%">
+                <img src="/images/Withc.jpg" alt="Which Witch is Which?" style="width:100%" onclick="myFunction(this)">
+                <img src="/images/VinylBunny.jpg" alt="Black Rabbit" style="width:100%" onclick="myFunction(this)">
                 </div>
+            </div>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
             </div>
 
         </section>
