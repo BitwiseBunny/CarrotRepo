@@ -42,7 +42,7 @@ section.gallery {
 
   }
   
-  /* Create four equal columns that sits next to each other */
+  /* Create four equal columns that sit next to each other */
   .column {
     -ms-flex: 30%; /* IE10 */
     flex: 30%;
@@ -71,7 +71,7 @@ section.gallery {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    padding-top: 1em; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -87,6 +87,8 @@ section.gallery {
     display: block;
     width: 80%;
     max-width: 700px;
+    margin-bottom: 2em;
+    padding-bottom: 3em;
   }
   
   /* Caption of Modal Image */
@@ -97,8 +99,6 @@ section.gallery {
     max-width: 700px;
     text-align: center;
     color: #ccc;
-    padding: 10px 0;
-    height: 150px;
   }
   
   /* Add Animation */
@@ -121,9 +121,11 @@ section.gallery {
   
   /* The Close Button */
   .close {
+    margin: 0;
+    padding: 0;
     position: absolute;
-    top: 15px;
-    right: 35px;
+    right: 30px;
+    top: 0;
     color: #f1f1f1;
     font-size: 40px;
     font-weight: bold;
