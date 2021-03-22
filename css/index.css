@@ -22,13 +22,53 @@ section.gallery {
     padding: 0;
 }
 
+.galleryHeader {
+  display: flex;
+  justify-content: center;
+
+}
+
 .galleryTitle {
+  color: #131313;
   text-align: center;
   font-family: 'Parisienne', cursive;
-  font-size: 2em;
-  position: relative;
-  
-  
+  font-size: 3em;
+}
+
+#tulipan1 {
+  height: 50px;
+  width: auto;
+  transform: rotate(270deg);
+  padding: 0 0 2em 0;
+
+
+}
+
+#tulipan2 {
+  height: 50px;
+  width: auto;
+  transform: rotate(90deg);
+  padding: 0 0 2em 0;
+
+}
+
+#filigreeTop {
+  filter: none;
+  width: 30%;
+  display: block;
+  margin: auto;    
+}
+
+#filigree {
+  filter: none;
+  min-width: 70%;
+  display: block;
+  margin: auto;
+  transform: rotate(180deg);    
+}
+
+#filigree:hover {
+  cursor: initial;
 }
 
 .row {
@@ -36,7 +76,7 @@ section.gallery {
     display: flex;
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
-    padding: 2em 4px;
+    padding: 0 4px;
     margin: 0;
     justify-content: center;
 
