@@ -15,6 +15,11 @@ h2::before {
     margin: -.3em;
 }
 
+.grayBackground {
+  filter: grayscale(100%);
+  -webkit-filter:grayscale(100%);
+}
+
 /* Responsive Gallery */
 section.gallery {
     justify-content: center;
@@ -23,40 +28,24 @@ section.gallery {
 }
 
 .galleryHeader {
-  display: flex;
+  display: block;
   justify-content: center;
-
+  background-image: url(../images/FiligreeMistyHorizon.png);
+  background-position: 50% 83%;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+  border: none;
+  margin: auto;
+  background-repeat: no-repeat;
 }
 
 .galleryTitle {
   color: #131313;
   text-align: center;
   font-family: 'Parisienne', cursive;
-  font-size: 3em;
-}
-
-#tulipan1 {
-  height: 50px;
-  width: auto;
-  transform: rotate(270deg);
-  padding: 0 0 2em 0;
-
-
-}
-
-#tulipan2 {
-  height: 50px;
-  width: auto;
-  transform: rotate(90deg);
-  padding: 0 0 2em 0;
-
-}
-
-#filigreeTop {
-  filter: none;
-  width: 30%;
-  display: block;
-  margin: auto;    
+  font-size: 4.5em;
+  padding-top: 5.1em;
 }
 
 #filigree {
