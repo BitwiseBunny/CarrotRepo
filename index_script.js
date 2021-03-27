@@ -4,6 +4,7 @@ var modal = document.getElementById("myModal");
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
+
 function modalFunction(image){
   modal.style.display = "block";
   modalImg.src = image.src;
@@ -17,3 +18,21 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() { 
   modal.style.display = "none";
 }
+
+//Todo
+//if alt == Alice for img above, then show p of words
+
+//header image grayscale filter on scroll
+const threshold = 300;
+var backgroundImg = getElementsByClassName('.hero-bg');
+
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+  if (currentScroll <= threshold) {
+   backgroundImg.classList.add('grayBackground');
+  }
+  else {
+    backgroundImg.classList.remove('grayBackground');
+  }
+
+});
