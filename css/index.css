@@ -15,10 +15,18 @@ h2::before {
     margin: -.3em;
 }
 
-.grayBackground {
-  filter: grayscale(100%);
-  -webkit-filter:grayscale(100%);
+.smokeOverlay {
+  position: absolute;
+  background-image: url(../images/undertow.png);
+
+  height: 400px;
+  width: 100%;
+  z-index: 1;
+  bottom: 0;
+  display: block;
+
 }
+
 
 /* Responsive Gallery */
 section.gallery {
@@ -29,11 +37,12 @@ section.gallery {
 
 .galleryHeader {
   display: block;
+  opacity: 0;
   justify-content: center;
-  background-image: url(../images/FiligreeMistyHorizon.png);
+  background-image: url(../images/FiligreeMistyHorizon1.png);
   background-position: 50% 83%;
   background-size: cover;
-  height: 600px;
+  padding-top: 14em;
   width: 100%;
   border: none;
   margin: auto;
@@ -44,8 +53,8 @@ section.gallery {
   color: #131313;
   text-align: center;
   font-family: 'Parisienne', cursive;
-  font-size: 4.5em;
-  padding-top: 5.1em;
+  font-size: 3.5em;
+  padding-bottom: 2em;
 }
 
 #filigree {
@@ -191,3 +200,15 @@ section.gallery {
         margin: 0;
     }
 }
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-2em);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+

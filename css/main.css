@@ -291,10 +291,6 @@ p {
 
     }
     
-
-
-    
-    
 }
 
 @media (min-width: 930px) {
@@ -456,3 +452,26 @@ p {
         opacity: 0;
     }
 }
+
+@keyframes darken {
+    0% {
+        filter: grayscale(30%);
+    }
+    30% {
+        filter: grayscale(70%);
+    }
+    50% {
+        filter: grayscale(80%);
+      
+    }
+    70% {
+        filter: grayscale(90%);
+       
+
+    }
+    100% {
+        filter: grayscale(0%);
+       
+        background: #131313;
+    }
+  }
