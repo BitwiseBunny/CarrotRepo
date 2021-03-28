@@ -22,17 +22,24 @@ span.onclick = function() {
 //Todo
 //if alt == Alice for img above, then show p of words
 
+
+
 //header image grayscale filter on scroll
-const threshold = 300;
-var backgroundImg = getElementsByClassName('.hero-bg');
+const checkpoint = 100;
+var bckImage = document.getElementById("galleryHeader");
+var smokeOver = document.getElementById("smokeOverlay");
+
 
 window.addEventListener("scroll", () => {
   const currentScroll = window.pageYOffset;
-  if (currentScroll <= threshold) {
-   backgroundImg.classList.add('grayBackground');
-  }
-  else {
-    backgroundImg.classList.remove('grayBackground');
-  }
+ 
+  if (currentScroll >= checkpoint) {
+    bckImage.style.opacity = "1";
+   // smokeOver.style.opacity = "1";
+    bckImage.style.animation = "fadeIn 2s forwards";
+   // smokeOver.style.animation = "fadeIn 2s forwards";
+  } else {
 
-});
+  }
+  
+}); 
