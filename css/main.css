@@ -36,7 +36,7 @@ body {
     background-attachment: fixed;
     color: white;
     text-align: center;
-    padding: 0 0 4em;
+    padding: 0;
     margin: 0;
 }
 
@@ -306,6 +306,7 @@ p {
     }
     .hero-bg {
         text-align: left;
+        background-position: 50% 83%;
     }
     .hero-bg p {
         margin: 0 0 3em;
@@ -324,7 +325,7 @@ p {
         font-size: 2.7rem;
     }
     .form-container {
-        margin: 2em -4em 2em 0;
+        margin: 2em -4em 0 0;
         padding: 1em 1em 1em 1em;
         border-radius: .5em;
     }

@@ -16,14 +16,16 @@ h2::before {
 }
 
 .smokeOverlay {
-  position: absolute;
+  position: relative;
   background-image: url(../images/undertow.png);
-
+  background-repeat: no-repeat;
   height: 400px;
   width: 100%;
   z-index: 1;
-  bottom: 0;
+  padding: 0 0 0;
+  margin: auto;
   display: block;
+  background-position: 50% 83%;
 
 }
 
@@ -32,7 +34,7 @@ h2::before {
 section.gallery {
     justify-content: center;
     margin: 0;
-    padding: 0;
+    padding: 0 0 0;
 }
 
 .galleryHeader {
@@ -40,9 +42,9 @@ section.gallery {
   opacity: 0;
   justify-content: center;
   background-image: url(../images/FiligreeMistyHorizon1.png);
-  background-position: 50% 83%;
+  background-position: 50% 93%;
   background-size: cover;
-  padding-top: 14em;
+  padding-top: 16em;
   width: 100%;
   border: none;
   margin: auto;
