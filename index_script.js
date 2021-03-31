@@ -26,20 +26,25 @@ span.onclick = function() {
 
 //header image grayscale filter on scroll
 const checkpoint = 100;
-var bckImage = document.getElementById("galleryHeader");
+var colorOverlay = document.getElementById("colorOverlay");
 var smokeOver = document.getElementById("smokeOverlay");
+var filigree = document.getElementById("galleryHeader");
 
 
 window.addEventListener("scroll", () => {
   const currentScroll = window.pageYOffset;
  
   if (currentScroll >= checkpoint) {
-    bckImage.style.opacity = "1";
-   // smokeOver.style.opacity = "1";
-    bckImage.style.animation = "fadeIn 2s forwards";
-   // smokeOver.style.animation = "fadeIn 2s forwards";
-  } else {
+    colorOverlay.style.opacity = "1";
+    colorOverlay.style.height = "auto";
+    colorOverlay.style.transition = "2.5s ease";
 
-  }
-  
+    setTimeout(() => {
+      filigree.style.opacity = "0";
+      filigree.style.transition = "2.5s";
+    }, 500);
+   // smokeOver.style.opacity = "1";
+    //colorOverlay.style.animation = "fadeIn 2s forwards";
+   // smokeOver.style.animation = "fadeIn 2s forwards";
+  }   
 }); 

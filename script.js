@@ -5,11 +5,14 @@ let imageGridOne = document.getElementById('imageGridOne');
 let btn = document.getElementById('cta-btn');
 let overlay = document.getElementById('overlay');
 let rightCol = document.getElementById('right-Col');
+let email = document.getElementById('emailForm');
 
 btn.addEventListener('click', () => {
     overlay.style.display = 'grid';
     overlay.classList.add('animate-overlay');
     setTimeout(function () {overlay.style.display='none'}, 3000);
+    email.onsubmit = false;
+    setTimeout(function () {email.submit()}, 3000);
 });
 
 const mobileBtn = document.getElementById('mobile-cta')
