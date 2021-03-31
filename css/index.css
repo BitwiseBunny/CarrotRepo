@@ -37,9 +37,27 @@ section.gallery {
     padding: 0 0 0;
 }
 
-.galleryHeader {
-  display: block;
+.colorOverlay {
+  position: absolute;
+  overflow: hidden;
+  height: 0;
+  justify-content: center;
+  background-image: url(../images/FiligreeColour.png);
+  background-position: 50% 93%;
+  background-size: cover;
+  padding-top: 28.19em;
+  width: 100%;
+  background-repeat: no-repeat;
+  place-content: center;
+  z-index: 1;
+  transition: none;
   opacity: 0;
+
+}
+
+.galleryHeader {
+  opacity: 1;
+  display: block;
   justify-content: center;
   background-image: url(../images/FiligreeMistyHorizon1.png);
   background-position: 50% 93%;
