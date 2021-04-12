@@ -94,7 +94,7 @@ section.gallery {
     display: flex;
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
-    padding: 0 4px;
+    padding: 2em 4px;
     margin: 0;
     justify-content: center;
 
@@ -118,8 +118,29 @@ section.gallery {
     filter: grayscale(100%);
   }
 
+  .column p {
+    border-style: solid;
+    border-width: .5px;
+  }
+
   .column img:hover {
     filter: none;
+  }
+
+  #title1Snow {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    font-family: 'Parisienne', cursive;
+    font-size: 2em;
+  }
+
+  #title1Snow span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: .5em;
   }
 
   /* CSS for modal ---------------------------------- */
@@ -150,6 +171,17 @@ section.gallery {
   }
   
   /* Caption of Modal Image */
+  #captionTitle {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    font-family: 'Parisienne', cursive;
+    font-size: 3em; 
+  }
+
   #caption {
     margin: auto;
     display: block;
@@ -157,6 +189,8 @@ section.gallery {
     max-width: 700px;
     text-align: center;
     color: #ccc;
+   /* font-family: 'Parisienne', cursive;
+    font-size: 3em; */
   }
   
   /* Add Animation */
