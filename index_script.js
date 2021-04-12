@@ -9,11 +9,20 @@ var SnowWhiteTitle = document.getElementById("title1Snow");
 var SnowWhiteText = document.getElementById("text1Snow");
 
 //dictionary to store modal image text captions
-var captionDict = {"Beyond the Black Forest" : "Rich blue velvet, "+
-                  "delicate yellow silk, white lace, red satin bows, and an apple. " +
-                  "It's the perfect getaway minidress for escaping wicked witches, "+
-                  "or taking a nap in the woods.",
-                "Alice Automata" : "Keep an ace up your sleeve, but don't lose your head!"};
+var captionDict = {"Beyond the Black Forest" : 
+                      "Rich blue velvet, delicate yellow silk, white lace, red satin bows, and an apple. ",
+                   "Alice Automata" : 
+                      "Keep an ace up your sleeve, but don't lose your head!",
+                    "Candy Apple Crush" : 
+                      "The perfect getaway minidress for escaping wicked witches, or taking a nap in the woods.",
+                    "Wicked" : 
+                      "Clever witches love custom stitches",
+                    "Across the Bridge and Through the Thicket" : 
+                      "Speaking of witches... Have you ever met one with a flare for vinyl, pumpkins, and black tulle?",
+                    "Black Rabbit" : 
+                      "Follow this rabbit, and say hello to Red Queen in vinyl and black lace.",
+                    "The Advent of the Alice Automata" :
+                      "Keep an ace up your sleeve, but don't lose your head!"};
 
 function modalFunction(image){
   modal.style.display = "block";
