@@ -7,7 +7,7 @@
     <title>Maison de Marika</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="./index.html">
+    <link rel="stylesheet" href="./index.md">
 </head>
 <body>
     <div class="overlay" id="overlay">
