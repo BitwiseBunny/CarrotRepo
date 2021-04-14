@@ -17,7 +17,7 @@
     <div class="navbar">
         <div class="container">
 
-            <a class="logo" href="./index.html">Maison de<span> Marika</span></a>
+            <a class="logo" href="./index.md">Maison de<span> Marika</span></a>
 
             <div class="img-menu-cta">
                 <img id="mobile-cta" src="images/menu.png" alt="Open menu">
@@ -29,7 +29,7 @@
                 </div>
 
                 <ul>
-                    <li class="current"><a href="./index.html">home</a></li>
+                    <li class="current"><a href="./index.md">home</a></li>
                     <li><a href="./about.html">about</a></li>
                     <li><a href="#">services</a></li>
                     <li><a href="#">products</a></li>
