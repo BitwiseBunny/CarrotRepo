@@ -20,7 +20,7 @@ var captionDict = {"Beyond the Black Forest" :
                     "Across the Bridge and Through the Thicket" : 
                       "Speaking of witches... Have you ever met one with a flare for vinyl, pumpkins, and black tulle?",
                     "Black Rabbit" : 
-                      "Follow this rabbit, and say hello to Red Queen in vinyl and black lace.",
+                      "Follow this rabbit, and say hello to the Red Queen in vinyl and black lace.",
                     "The Advent of the Alice Automata" :
                       "Keep an ace up your sleeve, but don't lose your head!"};
 
