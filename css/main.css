@@ -118,13 +118,13 @@ nav ul li a:hover{
 }
 
 section {
-    margin: 0 1em;
+    margin: 0;
 }
 
 h1 {
     font-size: 3rem;
     padding: 0 .5em 0 .5em;
-    margin: 1em -1em;
+    margin: 1em 0;
     font-family: 'Parisienne', cursive;
     font-weight: lighter;
     background-color: rgba(19,19,19, .5);
@@ -157,7 +157,7 @@ h1 span::before {
 }
 
 .form-container {
-    margin: 2em -1em 0;
+    margin: 2em 0em 0;
     padding: 2em 1em 1em;
 }
 
@@ -335,20 +335,13 @@ p {
         display: block;
         
     }
-    .form-left {
-      
-    }
+    
     label {
         margin: 0;
         font-size: 1.8em;
         margin-bottom: .5em;
     }
-    input[type=text] {
 
-    }
-    input[type=button] {
-
-    }
     .hero-bg p {
         margin-bottom: 0;
         width: 80%;
