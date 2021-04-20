@@ -29,7 +29,7 @@ body {
 }
 
 .hero-bg {
-    background: #131313 url('images/EiffelBackground.webp');
+    background: #131313 url('../images/EiffelBackground.webp');
     background-position: 50% 83%;
     background-size: cover;
     background-repeat: no-repeat;
