@@ -42,7 +42,7 @@ section.gallery {
   overflow: hidden;
   height: 0;
   justify-content: center;
-  background-image: url(../images/FiligreeColour.png);
+  background-image: url(../images/FiligreeColour.webp);
   background-position: 50% 93%;
   background-size: cover;
   padding-top: 28.19em;
