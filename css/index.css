@@ -59,7 +59,7 @@ section.gallery {
   opacity: 1;
   display: block;
   justify-content: center;
-  background-image: url(../images/FiligreeColour.png);
+  background-image: url(../images/FiligreeColour.webp);
   background-position: 50% 93%;
   background-size: cover;
   padding-top: 16em;
@@ -218,23 +218,61 @@ section.gallery {
     cursor: pointer;
   }
   
-  /* 100% Image Width on Smaller Screens */
   @media only screen and (max-width: 700px){
+    .galleryHeader {
+      background-size: 175%;
+      background-position: 50%;
+      padding-top: 6em;
+    }
+    /* 100% Image Width on Smaller Screens */
     .modal-content {
-      width: 100%;
+      width: 80%;
     }
   }
 
   /* above this line CSS for modal ----------------------------------------------- */
   
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  /* Responsive layout - applies to all screens 600px wide or less.
+     - Makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
+    .galleryHeader {
+      background-size: 190%;
+      height: 100%;
+      background-position: 50.5% 18%;
+      padding-top: 5em;
+      padding-bottom: 3.5em;
+    }
+
+    .galleryTitle {
+      font-size: 2em;
+      padding: 3.5em 1.5em 0 1.5em;
+    }
+
+    .row {
+      margin-top: 1em;
+    }
+
     .column {
       -ms-flex: 100%;
       flex: 100%;
-      max-width: 100%;
+      max-width: 80%;
     }
   }
+  @media screen and (max-width: 370px) {
+  .galleryHeader {
+    background-size: 190%;
+    height: 100%;
+    background-position: 50.5% 18%;
+    padding-top: 3em;
+    padding-bottom: 2.5em;
+  }
+
+  .galleryTitle {
+    font-size: 230%;
+    padding-top: 2.5em;
+    padding-bottom: 0;
+  }
+}
 
 @media (min-width: 930px) {
     h2 {
