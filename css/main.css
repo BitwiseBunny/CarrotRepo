@@ -198,12 +198,6 @@ input[type=button] {
     outline: none;
 }
 
-input[type=button]:hover {
-    background-color: white;
-    color: skyblue;
-    opacity: 87%;
-}
-
 .bottom {
     margin: 0;
 }
@@ -213,8 +207,6 @@ input[type=button]:hover {
     margin: 3em 1em;
     padding: 2em;
 }
-
-
 
 img {
     width: 100%;
@@ -241,6 +233,7 @@ p {
     font-family: 'Parisienne', cursive;
     font-size: 2.5em;
     font-weight: lighter;
+    text-align: center;
     color: skyblue;
 }
 
@@ -412,6 +405,12 @@ p {
 }
 
 @media (min-width: 1350px) {
+
+    input[type=button]:hover {
+        background-color: white;
+        color: skyblue;
+        opacity: 87%;
+    }    
 
     .form-container {
         width: 50%;
