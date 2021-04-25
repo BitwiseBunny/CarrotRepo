@@ -1,32 +1,30 @@
 
-h2 {
-    font-family: 'Parisienne', cursive;
-    position: relative;
-}
-
-h2::before {
-    content: '';
-    position: absolute;
-    width: 10.1em;
-    background-color: skyblue;
-    height: 0.02em;
-    bottom: 0.2em;
-    z-index: -1;
-    margin: -.3em;
-}
-
 .smokeOverlay {
   position: relative;
-  background-image: url(../images/undertow.png);
-  background-repeat: no-repeat;
-  height: 400px;
-  width: 100%;
-  z-index: 1;
-  padding: 0 0 0;
-  margin: auto;
+  padding: 0;
+  margin: 0;
   display: block;
-  background-position: 50% 83%;
+}
 
+.smokeOverlay img {
+  padding: 0;
+  margin: 0;
+  vertical-align: bottom;
+}
+
+.galleryTitle {
+  color: #131313;
+  position: absolute;
+  left: 0; 
+  right: 0;
+  bottom: 17%;
+  margin-left: auto; 
+  margin-right: auto; 
+  text-align: center;
+  font-family: 'Parisienne', cursive;
+  font-size: 3.5em;
+  padding: 0;
+  margin-bottom: 0;
 }
 
 
@@ -34,48 +32,9 @@ h2::before {
 section.gallery {
     justify-content: center;
     margin: 0;
-    padding: 0 0 0;
+    padding: 0;
 }
 
-.colorOverlay {
-  position: absolute;
-  overflow: hidden;
-  height: 0;
-  justify-content: center;
-  background-image: url(../images/FiligreeColour.webp);
-  background-position: 50% 93%;
-  background-size: cover;
-  padding-top: 28.19em;
-  width: 100%;
-  background-repeat: no-repeat;
-  place-content: center;
-  z-index: 1;
-  transition: none;
-  opacity: 0;
-
-}
-
-.galleryHeader {
-  opacity: 1;
-  display: block;
-  justify-content: center;
-  background-image: url(../images/FiligreeColour.webp);
-  background-position: 50% 93%;
-  background-size: cover;
-  padding-top: 16em;
-  width: 100%;
-  border: none;
-  margin: auto;
-  background-repeat: no-repeat;
-}
-
-.galleryTitle {
-  color: #131313;
-  text-align: center;
-  font-family: 'Parisienne', cursive;
-  font-size: 3.5em;
-  padding-bottom: 2em;
-}
 
 #filigree {
   filter: none;
